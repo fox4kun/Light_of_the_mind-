@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شهادة استشارية نفسية</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ececec url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .certificate {
+      position: relative;
+      width: 800px;
+      padding: 50px;
+      background: #fff url('https://www.transparenttextures.com/patterns/arabesque.png');
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 12px solid #2c3e50;
+      background-size: contain;
+    }
+    .certificate::before,
+    .certificate::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: 8px solid #2c3e50;
+    }
+    .certificate::before {
+      top: -12px;
+      left: -12px;
+      border-right: none;
+      border-bottom: none;
+    }
+    .certificate::after {
+      bottom: -12px;
+      right: -12px;
+      border-left: none;
+      border-top: none;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header img.logo {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: #2c3e50;
+    }
+    .header p {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #7f8c8d;
+    }
+    .body {
+      text-align: center;
+      color: #34495e;
+      line-height: 1.6;
+    }
+    .body .recipient {
+      margin: 30px 0;
+      font-size: 32px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .footer {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer .date {
+      font-size: 16px;
+      color: #7f8c8d;
+    }
+    .footer .signature {
+      text-align: center;
+    }
+    .footer .signature .line {
+      display: block;
+      width: 200px;
+      border-top: 1px solid #2c3e50;
+      margin-bottom: 5px;
+    }
+    .footer .signature .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .stamp {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      width: 100px;
+      opacity: 0.7;
+    }
+    .print-btn {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <div class="header">
+      <img src="https://l.top4top.io/p_3409846dt0.png" class="logo" alt="شعار المؤسسة">
+      <h1>شهادة استشارية</h1>
+      <p>تُمنح هذه الشهادة لـ</p>
+    </div>
+    <div class="body">
+      <p class="recipient">شاهين مروان</p>
+      <p>تقديراً لنجاحه وحضوره جلسة استشارية نفسية مهنية.</p>
+    </div>
+    <div class="footer">
+      <div class="date">06 مارس 2023</div>
+      <div class="signature">
+        <span class="line"></span>
+        <span class="name">الدكتور/ شاهين مروان</span>
+        <p>أخصائي نفسي سريري</p>
+      </div>
+    </div>
+    <img src="https://i.top4top.io/p_34104okut0.png" class="stamp" alt="ختم رسمي">
+    <button class="print-btn" onclick="window.print();">طباعة</button>
+  </div>
+</body>
+</html>
